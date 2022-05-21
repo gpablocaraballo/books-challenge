@@ -37,7 +37,7 @@ export default function Item({ item = {} }) {
       const newBooks = state.books.filter((book) => book.id !== item.id);
       dispatch({ type: APP_ACTIONS.RESET_BOOK_LIST, data: newBooks });
       dispatch({ type: APP_ACTIONS.SET_DIRTY_ORDER, data: false });
-      toast('Successfully deleted and reset to original order');
+      toast('Successfully deleted');
     } catch (err) {
       toast('There was an error');
       // eslint-disable-next-line no-console
@@ -57,7 +57,7 @@ export default function Item({ item = {} }) {
           ) : (
             <ItemThumbNail src={NoImage} alt="unavailable" />
           )}
-          <DeleteInput onClick={onDeleteClicked} value="Delete" type="button" />
+          {!state.dirtyOrder && <DeleteInput onClick={onDeleteClicked} value="Delete" type="button" />}
         </UpperContainer>
         <ItemName>
           {item.title}
