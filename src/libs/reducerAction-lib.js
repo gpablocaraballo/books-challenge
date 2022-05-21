@@ -1,0 +1,6 @@
+export const APP_ACTIONS = {
+  RESET_BOOK_LIST: 'RESET_BOOK_LIST',
+  SET_BOOK_LIST: 'SET_BOOK_LIST',
+  SET_DIRTY_ORDER: 'SET_DIRTY_ORDER',
+};
+export default { APP_ACTIONS };
