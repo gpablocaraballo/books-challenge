@@ -26,12 +26,11 @@ _2 . start the app_
 npm run start
 ``` 
 
-## Estructura general
+## General structure
 
 _Main page_
 ```
     App.js (Contains the context provider, and the main components)
-```
 ```
 _Main components_
 
@@ -40,7 +39,7 @@ _Main components_
 
     _BookList: Show the result of the graphql books request, show each book item._
 
-    _BookList/Item: Show each item with the Delete operation, if you click it, a model appears to confirm the delete action._
+    _BookList/Item: Show each item with the Delete operation, if you click it, a modal appears to confirm the delete action._
     
     _Modal: Its a generic modal to confirm the delete process._
 ```
@@ -61,10 +60,9 @@ _Main components_
 For this demo i use the native react context for the state management.
 ```
 
-## Graphql and real endpoints calls (the delete are "deleting" for real, you have some items to play with)
+## Graphql and real endpoints calls (the delete are "deleting" for real, so be careful, you have some items to play with)
 
 ```
 In a real scenario, the graphql calls must to be allocated on some backend server to avoid a security breach.
 For the purpose of this demo i created some real books, so you can play, list, delete books and also re order.
 ```
-
