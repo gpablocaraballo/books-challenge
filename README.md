@@ -60,7 +60,7 @@ _Main components_
 For this demo i use the native react context for the state management.
 ```
 
-## Graphql and real endpoints calls (the delete are "deleting" for real, so be careful, you have some items to play with)
+## Graphql and real endpoints calls (the delete button are "deleting" books for real, so be careful, you have some items to play with)
 
 ```
 In a real scenario, the graphql calls must to be allocated on some backend server to avoid a security breach.
